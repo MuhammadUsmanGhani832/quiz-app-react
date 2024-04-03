@@ -7,8 +7,6 @@ import Result from "./components/result";
 function App() {
   const [currentQuestions, setCurrentQuestions] = useState(0);
   const [userAnswers, setUserAnswers] = useState([]);
-
-  
   const handleNextQuestion = (isCorrect) => {
     setCurrentQuestions(currentQuestions+1);
     setUserAnswers([...userAnswers,isCorrect])
